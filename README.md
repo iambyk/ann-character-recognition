@@ -19,6 +19,7 @@ This project implements fundamental artificial neural network algorithms from sc
 ---
 
 ## Project Structure
+
 artificial-neural-networks-character-recognition/
 ├── main.py # Application entry point
 ├── README.md # This file
