@@ -138,6 +138,7 @@ pip install numpy matplotlib customtkinter pillow
 
 ### Running the Application
 python main.py
+```
 
 ---
 
@@ -199,7 +200,7 @@ Sigmoid computation is clipped to prevent overflow:
 x = clip(x, -500, 500)
 output = 1 / (1 + exp(-x))
 
-Demonstration Video
+## Demonstration Video
 
 A 6-8 minute demonstration video showing the complete project in action is available at:
 https://youtu.be/Rczj56KlVPs
@@ -213,7 +214,7 @@ Logic gate classification (AND, OR, XOR)
 Decision boundary visualization
 Discussion of XOR limitations with single-layer Perceptron
 
-Educational Value
+## Educational Value
 
 This project demonstrates:
 
@@ -223,15 +224,16 @@ Debugging Skills: Implementing gradient checking and loss monitoring
 Software Engineering: Modular design, encapsulation, and user-friendly interface
 Problem Solving: From theory to working implementation
 
-Limitations & Future Improvements
-Current Limitations
+## Limitations & Future Improvements
+
+### Current Limitations
 
 Small dataset (15 character examples) due to academic context
 Limited to binary or simple multi-class problems
 No data augmentation or normalization strategies
 No mini-batch processing for efficiency
 
-Potential Enhancements
+## Potential Enhancements
 
 Add convolutional layers for better image features
 Implement mini-batch gradient descent
@@ -240,7 +242,7 @@ Extend character set to all 26 letters + digits
 Implement other architectures (RNN, attention mechanisms)
 Add model validation with separate test set
 
-Acknowledgments
+## Acknowledgments
 
 Built as a learning project for university-level study of neural network fundamentals
 All algorithms implemented from mathematical principles without relying on high-level ML frameworks
