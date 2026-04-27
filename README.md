@@ -135,8 +135,9 @@ Weight Updates:
 ### Requirements
 ```bash
 pip install numpy matplotlib customtkinter pillow
-
+```
 ### Running the Application
+```bash
 python main.py
 ```
 
