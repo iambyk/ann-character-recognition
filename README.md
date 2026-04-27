@@ -20,22 +20,24 @@ This project implements fundamental artificial neural network algorithms from sc
 
 ## Project Structure
 
+```text
 artificial-neural-networks-character-recognition/
 ├── main.py # Application entry point
 ├── README.md # This file
 ├── requirements.txt # Python dependencies
 ├── src/ # Core implementation
-│ ├── utils.py # Activation functions & loss functions
-│ ├── perceptron.py # Single-layer Perceptron implementation
-│ ├── mlp.py # Multi-layer Perceptron + Backpropagation
-│ ├── data_loader.py # Dataset creation & loading
-│ └── visualizer.py # Matplotlib visualizations
+│   ├── utils.py # Activation functions & loss functions
+│   ├── perceptron.py # Single-layer Perceptron implementation
+│   ├── mlp.py # Multi-layer Perceptron + Backpropagation
+│   ├── data_loader.py # Dataset creation & loading
+│   └── visualizer.py # Matplotlib visualizations
 ├── gui/ # Graphical User Interface
-│ ├── init.py
-│ └── main_gui.py # CustomTkinter main window
+│   ├── __init__.py
+│   └── main_gui.py # CustomTkinter main window
 └── tests/ # Testing modules
-├── test_networks.py # Network functionality tests
-└── test_visualization.py # Visualization tests
+    ├── test_networks.py # Network functionality tests
+    └── test_visualization.py # Visualization tests
+```
 
 ---
 
