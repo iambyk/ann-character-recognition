@@ -166,30 +166,30 @@ python main.py
 
 ### Logic Gates Tab
 
-Select a gate: AND, OR, or XOR
-Adjust Perceptron hyperparameters
-Train: Click "Train Perceptron"
-View results in the output table
-Visualize decision boundary: Click "Show Decision Boundary"
+- Select a gate: AND, OR, or XOR
+- Adjust Perceptron hyperparameters
+- Train: Click "Train Perceptron"
+- View results in the output table
+- Visualize decision boundary: Click "Show Decision Boundary"
 
 Key Technical Decisions
-1. No Pre-built Libraries
+1. **No Pre-built Libraries**
 
-Using only NumPy for matrix operations ensures a deep understanding of:
-Matrix multiplication and broadcasting
-Gradient computation and chain rule
-Numerical stability considerations
-Memory-efficient implementations
+- Using only NumPy for matrix operations ensures a deep understanding of:
+- Matrix multiplication and broadcasting
+- Gradient computation and chain rule
+- Numerical stability considerations
+- Memory-efficient implementations
 
-2. GUI Implementation
+2- **GUI Implementation**
 
 CustomTkinter provides:
-Modern dark-themed interface
-Cross-platform compatibility
-Lightweight and responsive UI
-Easy hyperparameter adjustment
+- Modern dark-themed interface
+- Cross-platform compatibility
+- Lightweight and responsive UI
+- Easy hyperparameter adjustment
 
-3. Xavier Initialization
+3- **Xavier Initialization**
 Hidden layer weights are initialized using:
 
 scale = sqrt(2.0 / (n_in + n_out))
@@ -197,7 +197,7 @@ w = randn(n_in, n_out) * scale
 
 This helps prevent vanishing/exploding gradients.
 
-4. Numerical Stability
+4- **Numerical Stability**
 Sigmoid computation is clipped to prevent overflow:
 
 x = clip(x, -500, 500)
@@ -210,45 +210,45 @@ https://youtu.be/Rczj56KlVPs
 
 The video includes:
 
-Project introduction and architecture overview
-Live MLP training on character dataset
-Character drawing and prediction demonstration
-Logic gate classification (AND, OR, XOR)
-Decision boundary visualization
-Discussion of XOR limitations with single-layer Perceptron
+- Project introduction and architecture overview
+- Live MLP training on character dataset
+- Character drawing and prediction demonstration
+- Logic gate classification (AND, OR, XOR)
+- Decision boundary visualization
+- Discussion of XOR limitations with single-layer Perceptron
 
 ## Educational Value
 
 This project demonstrates:
 
-Understanding Core Concepts: Direct implementation of backpropagation without abstraction
-Mathematical Foundation: Practical application of calculus and linear algebra
-Debugging Skills: Implementing gradient checking and loss monitoring
-Software Engineering: Modular design, encapsulation, and user-friendly interface
-Problem Solving: From theory to working implementation
+- **Understanding Core Concepts:** Direct implementation of backpropagation without abstraction
+- **Mathematical Foundation:** Practical application of calculus and linear algebra
+- **Debugging Skills:** Implementing gradient checking and loss monitoring
+- **Software Engineering:** Modular design, encapsulation, and user-friendly interface
+- **Problem Solving:** From theory to working implementation
 
 ## Limitations & Future Improvements
 
 ### Current Limitations
 
-Small dataset (15 character examples) due to academic context
-Limited to binary or simple multi-class problems
-No data augmentation or normalization strategies
-No mini-batch processing for efficiency
+- Small dataset (15 character examples) due to academic context
+- Limited to binary or simple multi-class problems
+- No data augmentation or normalization strategies
+- No mini-batch processing for efficiency
 
 ## Potential Enhancements
 
-Add convolutional layers for better image features
-Implement mini-batch gradient descent
-Add regularization (L1/L2) to prevent overfitting
-Extend character set to all 26 letters + digits
-Implement other architectures (RNN, attention mechanisms)
-Add model validation with separate test set
+- Add convolutional layers for better image features
+- Implement mini-batch gradient descent
+- Add regularization (L1/L2) to prevent overfitting
+- Extend character set to all 26 letters + digits
+- Implement other architectures (RNN, attention mechanisms)
+- Add model validation with separate test set
 
 ## Acknowledgments
 
-Built as a learning project for university-level study of neural network fundamentals
-All algorithms implemented from mathematical principles without relying on high-level ML frameworks
-Developed to provide transparent, educational implementation of core ANN concepts
+- Built as a learning project for university-level study of neural network fundamentals.
+- All algorithms implemented from mathematical principles without relying on high-level ML frameworks.
+- Developed to provide transparent, educational implementation of core ANN concepts.
 
 
