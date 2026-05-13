@@ -213,13 +213,19 @@ class CharacterDataLoader:
         X_list = []
         y_list = []
 
-        class_names = sorted(list(characters_dict.keys()))
+        class_names = []
+        for char_name in sorted(characters_dict.keys()):
+            for font_name in sorted(characters_dict[char_name].keys()):
+                class_names.append(f"{font_name} {char_name}")
+
         class_to_index = {class_name: i for i, class_name in enumerate(class_names)}
 
-        for char_name, fonts in characters_dict.items():
-            for font_name, matrix in fonts.items():
+        for char_name in sorted(characters_dict.keys()):
+            for font_name in sorted(characters_dict[char_name].keys()):
+                matrix = characters_dict[char_name][font_name]
+                class_label = f"{font_name} {char_name}"
                 X_list.append(matrix)
-                y_list.append(class_to_index[char_name])
+                y_list.append(class_to_index[class_label])
 
         X = np.array(X_list)
         y = np.array(y_list)

@@ -398,7 +398,16 @@ class ANNProjectGUI(ctk.CTk):
                     epochs=1
                 )
                 self.mlp_model.load_weights(filepath)
-                self.class_names = ['A', 'B', 'C', 'D', 'E']
+
+                output_size = int(self.mlp_model.layer_sizes[-1])
+                if output_size == 15:
+                    letters = ['A', 'B', 'C', 'D', 'E']
+                    fonts = ['italik', 'kalin', 'standart']
+                    self.class_names = [f"{font} {letter}" for letter in letters for font in fonts]
+                elif output_size == 5:
+                    self.class_names = ['A', 'B', 'C', 'D', 'E']
+                else:
+                    self.class_names = [f"sinif_{i}" for i in range(output_size)]
 
                 self.char_status_label.configure(text="Durum: Model yüklendi.")
                 self.char_classes_label.configure(text=f"Sınıflar: {', '.join(self.class_names)}")
